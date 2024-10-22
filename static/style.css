@@ -1,0 +1,110 @@
+body {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(70, 242, 252, 1) 100%);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    flex-direction: column;
+    /* Allow for vertical stacking */
+  }
+  
+  .container {
+    text-align: center;
+    color: white;
+    z-index: 2;
+    position: relative;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 900px;
+    margin-top: 10%;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    position: absolute;
+    /* Use absolute positioning */
+    top: 5%;
+    /* Position at the top */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Adjust for centering */
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    white-space: nowrap;
+    /* Prevent line breaks */
+  }
+  
+  #greeting {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Adds "..." when text is cut off */
+    white-space: nowrap;
+  }
+  
+  .form-control,
+  .btn {
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: rgb(34, 43, 122);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  #gradientCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95vw;
+    height: 180vh;
+    z-index: 1;
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.5rem;
+      /* Adjust font size for small screens */
+    }
+  
+    .container {
+      padding: 20px;
+      /* Reduce padding on small screens */
+    }
+  }
+  
+  .h2 {
+    margin-bottom: 25px;
+    position: absolute;
+    /* Use absolute positioning */
+    top: 5%;
+    /* Position at the top */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Adjust for centering */
+    color: rgb(0, 81, 255);
+  
+    font-weight: bolder;
+    white-space: nowrap;
+    /* Prevent line breaks */
+  }
